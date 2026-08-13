@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background-color: #060606;
+    color: #f4f4f4;
+}
+
+body::selection {
+    background: rgba(255, 0, 0, 0.35);
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 24px 40px;
+}
+strong{
+    font-size:48px;
+}
+.brand {
+    font-size:25px;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-nav {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.85;
+}
+
+.main-nav a:hover {
+    opacity: 50%;
+}
+
+.login-btn {
+    border: 1px solid #ff0d29;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+    .login-btn:hover {
+        opacity: 50%;
+    }
+
+
+
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) minmax(320px, 1.1fr);
+    gap: 32px;
+    align-items: center;
+    padding: 0 40px 32px;
+}
+
+.hero-copy {
+    max-width: 520px;
+}
+
+
+
+
+.hero h1 {
+    margin: 0;
+    font-size:40px;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+}
+
+.hero-label {
+    margin: 18px 0 0;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 1rem;
+}
+
+.hero-info {
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.95rem;
+}
+
+.hero-description {
+    margin: 0;
+    max-width: 520px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    min-height: 44px;
+}
+    .btn:hover{
+        opacity: 50%;
+    }
+
+
+
+.btn-primary {
+    background: #ff0d29;
+    color: #ffffff;
+    padding: 0 24px;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    padding: 0 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-image {
+    min-height: 420px;
+    border-radius: 28px;
+    background-image: url('spider-man-vs-red-ninja-qt.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    padding: 0 40px 32px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: min(640px, 100%);
+    gap: 12px;
+    margin: 0 auto;
+    padding: 14px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.search-icon {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    color: #ffffff;
+    outline: none;
+}
+
+.movies-section {
+    padding: 0 40px 40px;
+}
+
+.movies-section h2 {
+    margin: 0 0 18px;
+    font-size: 1.4rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px;
+}
+
+.movie-card {
+    background: #0f0f12;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 28px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.movie-card img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.card-body h3 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.card-body p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.95rem;
+}
+
+.card-meta {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.card-actions {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-actions .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0 16px;
+    min-height: 42px;
+}
+
+.btn-link {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 32px 40px 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+}
+
+.footer-grid h4 {
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+}
+
+.footer-grid p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 920px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+
+    .search-bar {
+        padding: 14px 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-header,
+    .hero,
+    .search-section,
+    .movies-section,
+    .site-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-actions,
+    .card-actions {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        gap: 12px;
+    }
+
+    .search-bar {
+        gap: 10px;
+    }
+}
